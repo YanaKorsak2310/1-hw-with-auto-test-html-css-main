@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
          <label for="city">Select a city</label>
          <select name="city" id="city">
             <option value="barcelona">Barcelona</option>
-            <option value="malaga">Malaga</option>
+            <option value="malaga" selected> Malaga</option>
             <option value="nerja">Nerja</option>
             <option value="madrid">Madrid</option>
             <option value="marbella">Marbella</option>
@@ -38,7 +38,6 @@
 
         <div data-cy="hw1-unordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
-
             <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
             <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
         </div>
@@ -46,7 +45,16 @@
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
             <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <h2> My favorite movies </h2>
+
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
+             <ol>
+                <li>Ghostlight</li>
+                <li>Thelma</li>
+                <li>Late Night with the Devil</li>
+                <li>Inside Out 2 </li>
+                <li>Dune: Part Two</li>
+             </ol>
         </div>
         <div data-cy="hw1-skills-box-pre">
             <h2>Мои скиллы</h2>
@@ -54,20 +62,63 @@
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+                <label>
+                    <input type="checkbox" name="topic" id="html" checked> HTML
+                </label>
+                <br>
+                <label>
+                <input type="checkbox" name="topic" id="ccs"> CCS</label>
+                <br>
+                <label>
+                    <input type="checkbox" name="topic" id="sass" checked> SASS
+                </label>
+                <br>
+                <label>
+                <input type="checkbox" name="topic" id="ccs-flex"> CCS-Flex</label> 
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+         <input type="text" name="newSkill" id="skillInput" placeholder='Новый скилл'>
+
         <!-- 6) Создай здесь кнопку “Добавить” -->
+         <button type="button" name="myButton"> Добавить</button>
+
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
+         <hr>
         
-        <table data-cy="hw-about-table-pre">
+        <table data-cy="hw-about-table-pre" border="1">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
+           <tr>
+            <th>п/п</th>
+            <th>Наименование</th>
+            <th>Количество</th>
+           </tr>         
+           <tr>
+            <td>1</td>
+            <td>Монитор</td>
+            <td>2</td>
+           </tr> 
+           <tr>
+            <td>2</td>
+            <td>Клавиатура</td>
+            <td>1</td>
+           </tr> 
+           <tr>
+            <td>3</td>
+            <td>Мышь</td>
+            <td>1</td>
+           </tr> 
+           <tr>
+            <td colspan="2">Итог:</td>
+            <td>4</td>
+           </tr> 
         </table>
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+         <a href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 </html>
